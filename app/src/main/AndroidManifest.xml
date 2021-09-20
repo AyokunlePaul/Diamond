@@ -14,7 +14,8 @@
         android:theme="@style/Theme.Diamond"
         android:usesCleartextTraffic="true">
         <activity android:name=".presentation.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
