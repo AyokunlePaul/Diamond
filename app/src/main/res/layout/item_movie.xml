@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_news_item"
+    android:clickable="true"
+    android:focusable="true"
+    app:rippleColor="@android:color/darker_gray"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp"
+    app:contentPadding="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:id="@+id/img_movie"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/ic_default_movie" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/img_movie"
+            app:layout_constraintTop_toTopOf="@id/img_movie"
+            tools:text="Movie title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:id="@+id/tv_movie_description"
+            android:textColor="@color/purple_200"
+            android:ellipsize="end"
+            android:maxLines="4"
+            app:layout_constraintStart_toStartOf="@id/tv_movie_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_movie_title"
+            tools:text="Movie title\nMulti-lines\nLine3\nLine4"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
